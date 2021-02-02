@@ -1,0 +1,144 @@
+:root{
+  --color-white:#ffff;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-button-submit:RosyBrown;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color:var(--color-white);
+  margin:0px;
+  font-weight: 400;
+}
+
+body ::before{
+  content:' ';
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient( 115deg, RosyBrown, rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center ;
+}
+
+.continer{
+  width: 60%;
+  margin: 50px auto;
+  display: block;
+  padding: 50px;
+}
+
+header{
+  display:block;
+}
+
+.header{
+  padding: 8px 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.header-title{
+  text-align:center;
+}
+
+h1{
+  margin-top: 10px;
+  margin-bottom: 1px;
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: 200px;
+  line-height: 1;
+}
+
+
+#description {
+  font-style:italic;
+  font-weight: 10px;
+  font-size:22px;
+
+}
+
+
+form{
+  background: var(--color-darkblue-alpha);
+  padding: 60px 50px;
+  border-radius: 50px;
+
+}
+ .form-group{
+  padding: 15px
+ }
+
+
+ label , .form-group p{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+ }
+
+ .clue {
+  font-size: 16px;
+  color: #e4e4e4;
+ }
+
+ .form-control{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  color: #495057;
+  background-color:var(--color-white);
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+ }
+
+ select{
+   text-align: start;
+   align-items: center;
+   font: 400 13.3333px Arial;
+ }
+
+ .input-radio , .input-chechbox{
+   display:inline-block;
+   margin:10px;
+ }
+
+
+textarea{
+  display: inline-block;
+  text-align: start;
+  font: 400 13.3333px 'Poppins';
+  font-weight: 100px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+
+ .input-textarea {
+  min-height: 112px;
+  width: 93%;
+  padding: 15px;
+  resize: vertical;
+}
+
+
+ .submit-button {
+  display: block;
+  font-weight: 200px;
+  font-size:21px;
+  line-height: 1;
+  width: 100%;
+  padding: 20px;
+  color:var(--color-white);
+  background:var(--color-button-submit);
+  border-radius: 200px;
+
+ }
